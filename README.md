@@ -1,11 +1,11 @@
-# ![LOGO](logo.png) Amazon Route 53 MSP Connector
+# ![LOGO](logo.png) Amazon Route 53 **flow**ground Connector
 
 ## Description
 
-A generated MSP connector for the Amazon Route 53 API (version 2013-04-01).
+A generated **flow**ground connector for the Amazon Route 53 API (version 2013-04-01).
 
 Generated from: https://api.apis.guru/v2/specs/amazonaws.com/route53/2013-04-01/swagger.json<br/>
-Generated at: 2019-05-07T11:16:34+03:00
+Generated at: 2019-05-07T17:36:14+03:00
 
 ## API Description
 
@@ -747,7 +747,7 @@ Supported authorization schemes:
 
 ## License
 
-flowground :- Telekom iPaaS / amazonaws-com-route-53-connector<br/>
+**flow**ground :- Telekom iPaaS / amazonaws-com-route-53-connector<br/>
 Copyright © 2019, [Deutsche Telekom AG](https://www.telekom.de)<br/>
 contact: flowground@telekom.de
 
