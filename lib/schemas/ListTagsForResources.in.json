@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "ResourceType": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "A complex type that contains information about the health checks or hosted zones for which you want to list tags.",
+            "properties": {
+                "ResourceIds": {
+                    "description": "A complex type that contains the ResourceId element for each resource for which you want to get a list of tags.",
+                    "items": {
+                        "maxLength": 64,
+                        "type": "string"
+                    },
+                    "maxItems": 10,
+                    "minItems": 1,
+                    "type": "array"
+                }
+            },
+            "required": [
+                "ResourceIds"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

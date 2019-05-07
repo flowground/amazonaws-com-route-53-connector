@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "Id": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "A complex type that contains information about the traffic policy that you want to create a new version for.",
+            "properties": {
+                "Comment": {
+                    "description": "The comment that you specified in the <code>CreateTrafficPolicyVersion</code> request, if any.",
+                    "maxLength": 1024,
+                    "type": "string"
+                },
+                "Document": {
+                    "description": "The definition of this version of the traffic policy, in JSON format. You specified the JSON in the <code>CreateTrafficPolicyVersion</code> request. For more information about the JSON format, see <a>CreateTrafficPolicy</a>.",
+                    "maxLength": 102400,
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Document"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

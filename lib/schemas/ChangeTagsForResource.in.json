@@ -1,0 +1,96 @@
+{
+    "type": "object",
+    "properties": {
+        "ResourceType": {
+            "required": true,
+            "type": "string"
+        },
+        "ResourceId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "A complex type that contains information about the tags that you want to add, edit, or delete.",
+            "example": {
+                "AddTags": [
+                    {
+                        "Key": "apex",
+                        "Value": "3874"
+                    },
+                    {
+                        "Key": "acme",
+                        "Value": "4938"
+                    }
+                ],
+                "RemoveTagKeys": [
+                    "Nadir"
+                ],
+                "ResourceId": "Z3M3LMPEXAMPLE",
+                "ResourceType": "hostedzone"
+            },
+            "properties": {
+                "AddTags": {
+                    "description": "<p>A complex type that contains a list of the tags that you want to add to the specified health check or hosted zone and/or the tags that you want to edit <code>Value</code> for.</p> <p>You can add a maximum of 10 tags to a health check or a hosted zone.</p>",
+                    "items": {
+                        "description": "A complex type that contains information about a tag that you want to add or edit for the specified health check or hosted zone.",
+                        "properties": {
+                            "Key": {
+                                "description": "<p>The value of <code>Key</code> depends on the operation that you want to perform:</p> <ul> <li> <p> <b>Add a tag to a health check or hosted zone</b>: <code>Key</code> is the name that you want to give the new tag.</p> </li> <li> <p> <b>Edit a tag</b>: <code>Key</code> is the name of the tag that you want to change the <code>Value</code> for.</p> </li> <li> <p> <b> Delete a key</b>: <code>Key</code> is the name of the tag you want to remove.</p> </li> <li> <p> <b>Give a name to a health check</b>: Edit the default <code>Name</code> tag. In the Amazon Route 53 console, the list of your health checks includes a <b>Name</b> column that lets you see the name that you've given to each health check.</p> </li> </ul>",
+                                "maxLength": 128,
+                                "type": "string"
+                            },
+                            "Value": {
+                                "description": "<p>The value of <code>Value</code> depends on the operation that you want to perform:</p> <ul> <li> <p> <b>Add a tag to a health check or hosted zone</b>: <code>Value</code> is the value that you want to give the new tag.</p> </li> <li> <p> <b>Edit a tag</b>: <code>Value</code> is the new value that you want to assign the tag.</p> </li> </ul>",
+                                "maxLength": 256,
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "maxItems": 10,
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "RemoveTagKeys": {
+                    "description": "A complex type that contains a list of the tags that you want to delete from the specified health check or hosted zone. You can specify up to 10 keys.",
+                    "items": {
+                        "maxLength": 128,
+                        "type": "string"
+                    },
+                    "maxItems": 10,
+                    "minItems": 1,
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

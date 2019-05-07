@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "MaxItems": {
+            "required": false,
+            "type": "string"
+        },
+        "StartRecordName": {
+            "required": false,
+            "type": "string"
+        },
+        "StartRecordType": {
+            "required": false,
+            "type": "string"
+        },
+        "StartRecordIdentifier": {
+            "required": false,
+            "type": "string"
+        },
+        "Id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "A request for the resource record sets that are associated with a specified hosted zone.",
+            "properties": {},
+            "type": "object"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
